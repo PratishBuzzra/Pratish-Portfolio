@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Nunito", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: #e3e6f3;
+}
+
+section {
+    min-height: 100vh;
+
+    padding: 10rem 20% 5rem;
+}
+
+.header {
+   
+    width: 100%;
+    padding: 2rem 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 750;
+    cursor: default;
+    color: #000;
+    position: relative;
+}
+
+
+.logo::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: orange;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 49%;
+    left: -35px;
+    transform: translateY(-51%);
+}
+
+.logo span {
+    font-size: 18px;
+    font-weight: 400;
+    color: grey;
+
+}
+
+.navbar a {
+    font-size: 2.5rem;
+    color: grey;
+    margin-left: 4rem;
+    font-weight: 700;
+    position: relative;
+    padding: 0 5px;
+}
+
+.navbar a:hover {
+    color: red;
+}
+
+.navbar a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+
+    right: -20px;
+    transform: translateY(-50%);
+    width: 1.6px;
+    height: 1.1em;
+    background-color: grey;
+    /* Change color to match your design */
+    display: inline-block;
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: #000;
+    display: none;
+}
+
+#close {
+    font-size: 3.6rem;
+    color: #000;
+    display: none;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 25px;
+
+
+}
+
+.home-content {
+    margin-left: 2.5rem;
+
+}
+
+.home-content h1 {
+    font-size: 6.5rem;
+    font-weight: 800;
+    line-height: 1.5;
+
+}
+
+.home-content h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2;
+}
+
+.home-content p {
+    font-size: 1.9rem;
+    text-align: justify;
+    line-height: 1.5;
+
+}
+
+.home-img img {
+    width: 28vw;
+    border-radius: 50%;
+    margin-bottom: 5rem;
+
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.button a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 13rem;
+    height: 13rem;
+    color: #000;
+    font-weight: 800;
+    border: 2px solid gray;
+    border-radius: 50%;
+    font-size: 2rem;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.button a:nth-child(1) {
+    background-color: #eea302;
+
+}
+
+.button a:nth-child(2) {
+    background-color: #ff3b25;
+
+}
+
+.button a:nth-child(3) {
+    background-color: #80d8da;
+
+}
+
+.button a:hover {
+    background-color: #fff;
+}
+
+.footer {
+    padding: 40px 10px 20px;
+
+    border-top: 3px solid grey;
+    color: #777;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+
+}
+
+.footer .col {
+    flex: 1 1 30rem;
+
+    margin-bottom: 15px;
+
+    padding: 0 80px;
+}
+
+.footer .col h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+
+}
+
+.footer .col p {
+    font-size: 15px;
+
+}
+
+footer .col i {
+    margin-right: 20px;
+    cursor: pointer;
+    color: rgb(68, 64, 64);
+    font-size: 15px;
+
+}
+
+@media (max-width: 1500px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 1350px) {
+
+
+    .home-img img {
+        width: 35vw;
+        margin-top: 0;
+    }
+
+}
+
+@media (max-width: 1025px) {
+
+
+    .home-img img {
+        width: 35vw;
+        margin-top: 0;
+    }
+
+    .footer .col {
+        flex: 1 1 40rem;
+
+        margin-bottom: 15px;
+
+        padding: 0 80px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 10%;
+    }
+
+    section {
+        padding: 10rem 3%;
+    }
+
+    .home-img img {
+        width: 40vw;
+        margin-top: 0;
+    }
+
+}
+
+@media(max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .header {
+        padding: 2rem 10%;
+    }
+
+    .logo {
+        font-size: 3rem;
+        font-weight: 800;
+        cursor: default;
+        color: #000;
+        position: relative;
+    }
+
+    #menu-icon {
+        font-size: 30px;
+    }
+
+    .logo::before {
+        content: '';
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background-color: orange;
+        border-radius: 50%;
+        margin-right: 8px;
+        position: absolute;
+        top: 49%;
+        left: -35px;
+        transform: translateY(-51%);
+    }
+
+    .navbar a:not(:last-child)::after {
+        display: none;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: -1000px;
+        width: 300px;
+        padding: 80px 0 0 10px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        height: 100%;
+        background: #e3e6f3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.5);
+        transition: 0.3s;
+        z-index: 999;
+
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #close {
+        position: absolute;
+        display: initial;
+        top: 30px;
+        left: 30px;
+    }
+
+    .navbar a {
+        font-size: 25px;
+    }
+
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-img img {
+        width: 60vw;
+        margin-top: 0;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .button a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 12rem;
+        height: 12rem;
+        color: #000;
+        font-weight: 800;
+        border: 2px solid gray;
+        border-radius: 50%;
+        font-size: 2rem;
+        margin: 3rem 1.5rem 3rem 0;
+        transition: .5s ease;
+    }
+
+
+}
+
+@media(max-width: 617px) {
+
+
+    .home-img img {
+        width: 95vw;
+        margin-top: 0;
+    }
+
+}
+
+@media(max-width: 450px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    section {
+        padding: 10rem 55%;
+    }
+
+    .header {
+        padding: 2rem 2%;
+        margin-left: 40px;
+    }
+
+    .home-img img {
+        width: 95vw;
+    }
+
+    .logo {
+        font-size: 4rem;
+        padding-left: 25px;
+    }
+
+    .logo span {
+        font-size: 2.5rem;
+    }
+
+    #menu-icon {
+        font-size: 35px;
+        margin-right: -25px;
+    }
+
+    .logo::before {
+        content: '';
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background-color: orange;
+        border-radius: 50%;
+        margin-right: 8px;
+        position: absolute;
+        top: 49%;
+        left: -9px;
+        transform: translateY(-50%);
+    }
+
+    .home-content p {
+        font-size: 17px;
+        text-align: justify;
+        line-height: 1.5;
+
+    }
+
+    .footer {
+        padding: 40px 0px 20px;
+        border-top: 4px solid grey;
+        color: #777;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 130%;
+    }
+
+}
+
+@media (max-width: 325px) {
+    section {
+        padding: 10rem 55%;
+    }
+
+    .header {
+        padding: 2rem 2%;
+        margin-left: 45px;
+    }
+
+    .logo {
+        font-size: 3.5rem;
+        margin-left: -20px;
+    }
+
+    .logo::before {
+        content: '';
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background-color: orange;
+        border-radius: 50%;
+        margin-right: 8px;
+        position: absolute;
+        top: 49%;
+        left: -8px;
+        transform: translateY(-50%);
+    }
+
+    #menu-icon {
+        font-size: 35px;
+        margin-right: -25px;
+    }
+
+    .home-content p {
+        font-size: 2rem;
+        text-align: justify;
+        line-height: 1.5;
+
+    }
+
+    .footer {
+        width: 130%;
+    }
+}
+
+/*------resume page-------*/
+.resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
