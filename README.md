@@ -1,5 +1,5 @@
 ### Links
-Live Site URL: [Pratish-Portfolio]([https://pratishbuzzra.github.io/frontend-mentor-qrcode/](https://pratishbuzzra.github.io/Pratish-portfolio/index.html))
+Live Site URL: [Pratish-Portfolio](https://pratishbuzzra.github.io/Pratish-portfolio/index.html)
 
 
 ### Built with
