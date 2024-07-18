@@ -672,7 +672,7 @@ body {
 
 @media(max-width: 500px) {
 	html {
-		font-size: 60%;
+		font-size: 50%;
 	}
     .header {
         padding: 4vw 11vw;
@@ -879,7 +879,7 @@ body {
 
 @media(max-width: 325px) {
     html {
-		font-size: 45%;
+		font-size: 40%;
 	}
 
     .header {
